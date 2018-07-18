@@ -5,11 +5,11 @@ Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "Imagenet classificati
 
 Using Dataset
 
-| Implementation | Accuracy | Weights | Memory | Conv Ops |
-|---|---|---|---|---|
-| Keras |   |   |   |   |
-| Tensorflow |   |   |   |   |
-| Pytorch |   |   |   |   |
+| Implementation | Accuracy | Weights | Memory | Conv Ops | etc |
+|---|---|---|---|---|   |
+| Keras |   |   |   |   |    |
+| Tensorflow |   |   |   |   |    |
+| Pytorch |   |   |   |   |[link](https://github.com/Jooong/DLCV/tree/master/alexnet)|
 
 ## Tip & Trick
 
