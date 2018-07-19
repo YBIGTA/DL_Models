@@ -9,7 +9,7 @@ Using Dataset
 |---|---|---|---|---|---|
 | Keras |   |   |   |   |    |
 | Tensorflow |   |   |   |   |    |
-| Pytorch |  - | 57930474  | 4.343GB |   |[link](https://github.com/Jooong/DLCV/tree/master/alexnet)|
+| Pytorch | 90% (CIFAR 10) | 57.9M  | 4.343GB |   |[link](https://github.com/Jooong/DLCV/tree/master/alexnet)|
 
 ## Tip & Trick
 
