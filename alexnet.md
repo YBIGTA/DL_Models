@@ -8,7 +8,7 @@ Using Dataset
 | Implementation | Accuracy | Weights | Memory | Conv Ops | etc |
 |---|---|---|---|---|---|
 | Keras |   |  35,659,688 | 35,659,688 * 4bytes |   |    |
-| Tensorflow |   |   | 71,324,339  | 71,324,339 * 4bytes  |    |
+| Tensorflow |   | 71,324,339  | 71,324,339 * 4bytes |   |    |
 | Pytorch (CIFAR 10) | 90%  | 58.3M  | 5.397GB |   |[link](https://github.com/Jooong/DLCV/blob/master/classification/models.py#L71)|
 
 ## Tip & Trick
