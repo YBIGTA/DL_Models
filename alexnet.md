@@ -13,11 +13,14 @@ Using Dataset
 
 ## Tip & Trick
 
-| TT | for What | others |
+| name | for What | reference |
 |---|---|---|
-| Relu | faster train / *training deeper network | [Relu](), [Relu_maht]() |
-|   |   |
-|   |   |
+| Relu | faster train / *training deeper network* | [Paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.6419&rep=rep1&type=pdf) |
+| LRN  | better generalization (replaced with BN later)  | [LRN in caffe](http://caffe.berkeleyvision.org/tutorial/layers/lrn.html) |
+| Overlapping Pooling | to avoid overfitting | - |
+| Drop Out | to avoid overfitting | [Paper](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) |
+| Color PCA augmentation | to avoid overfitting, data augmentation | - |
+
 
 ## Error of paper
 - 224x224 is actually 227x227
