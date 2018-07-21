@@ -151,10 +151,12 @@ class AlexNetBn(nn.Module):
                     nn.ReLU(),
                     )
         self.fc1 = nn.Sequential(
+                    nn.Dropout(),
                     nn.Linear(in_features = 256*6*6, out_features = 4096, bias = True),
                     nn.ReLU(),
                     )
         self.fc2 = nn.Sequential(
+                   nn.Dropout(),
                    nn.Linear(in_features = 4096, out_features = 4096, bias = True),
                    nn.ReLU()
                     )
