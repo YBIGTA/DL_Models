@@ -8,7 +8,7 @@ Using Dataset
 | Implementation | Accuracy | Weights | Memory | Conv Ops | etc |
 |---|---|---|---|---|---|
 | Keras |   |   |  |   |    |
-| Tensorflow |   |   |  |   |   |
+| Tensorflow Slim |   | 73,998,072 | 73,998,072 * 4bytes |   |   |
 | Pytorch |  |   |  |  |  |
 
 ## Tip & Trick
