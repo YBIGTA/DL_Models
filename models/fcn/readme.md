@@ -15,8 +15,8 @@ Using Dataset
 
 | name | for What | reference |
 |---|---|---|
-|Skip Layers|to produce accurate and detailed segmentations| - |
-|  |  |  |
+| Skip Layers | to produce accurate and detailed segmentations | - |
+| Becoming Fully Convolutional | 1. to be free from the size of image / 2. to store location information of each pixel | - |
 |  |  |  |
 |  |  |  |
 |  |  |  |
