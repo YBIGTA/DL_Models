@@ -15,7 +15,7 @@ Using Dataset
 
 | name | for What | reference |
 |---|---|---|
-|  |  |  |
+|Skip Layers|to produce accurate and detailed segmentations| - |
 |  |  |  |
 |  |  |  |
 |  |  |  |
