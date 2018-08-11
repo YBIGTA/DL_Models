@@ -17,7 +17,7 @@ Using Dataset
 |---|---|---|
 | Skip Layers | to produce accurate and detailed segmentations | - |
 | Becoming Fully Convolutional | 1. to be free from the size of image <br> 2. to store location information of each pixel | - |
-|  |  |  |
+| Dilated ConV | 1. Dilated convolution for extract global feature | https://arxiv.org/abs/1511.07122 |
 |  |  |  |
 |  |  |  |
 
