@@ -143,6 +143,6 @@ class FCN8s(nn.Module):
         upscore_fr = self.upscore_fr(score) # now 1/32 ( ?, num_class, 7, 7 )
         upscore_pool5 = self.upscore_pool5(score_pool5+upscore_fr) # now 1/16 ( ?, num_class, 14, 14 )
         upscore_pool4 = self.upscore_pool4(score_pool4+upscore_pool5) # now 1/8 ( ?, num_class, 28, 28 )
-        upscore_final = self.upscore_pool3(score_pool3+upscore_pool4)  # now  ( ?, num_class, 56, 56 )
+        upscore_final = self.upscore_pool3(score_pool3+upscore_pool4)  # now  ( ?, num_class, 224, 224 )
 
         return upscore_final
