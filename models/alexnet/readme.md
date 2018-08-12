@@ -8,7 +8,7 @@ Using Dataset
 | Implementation | Accuracy | Weights | Memory | Conv Ops | etc |
 |---|---|---|---|---|---|
 | Keras |   |  35,659,688 | 35,659,688 * 4bytes |   |    |
-| Tensorflow |   | 62,377,088  | 62,377,088 * 4bytes |   |  [link](https://github.com/YBIGTA/DL_Models/blob/master/models/alexnet/tensorflow/Alexnet%20(Tensorflow).ipynb)  |
+| Tensorflow Slim |   | 62,378,344  | 62,378,344 * 4bytes |   |   |
 | Pytorch | 90.1% (CIFAR 10, added BN) | 58,323,690  | 58,323,690 * 4bytes |   |[link](https://github.com/Jooong/DLCV/blob/master/classification/models.py#L71)|
 
 ## Tip & Trick
