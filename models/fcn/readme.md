@@ -8,7 +8,7 @@ Using Dataset
 | Implementation | Accuracy | Weights | Memory | Conv Ops | etc |
 |---|---|---|---|---|---|
 | Keras |   | FCN8: 427,127,544, FCN32 : 4,234,357,544 |  |   |    |
-| Tensorflow Slim |   | 73,998,072 | 73,998,072 * 4bytes |   |   |
+| Tensorflow Slim |   | 256,445,037 | 256,445,037 * 4bytes |   |   |
 | Pytorch |  |  134,426,885 | 134,426,885 * 4bytes |  |  |
 
 ## Tip & Trick
