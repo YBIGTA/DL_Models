@@ -14,9 +14,8 @@
 
 | input image | output mask |
 | ----------- | ----------- |
-| ![](pytorch/result/004_input.png) | ![](pytorch/result/004_output.png) |
-| ![](pytorch/result/005_input.png) | ![](pytorch/result/005_output.png) |
-| ![](pytorch/result/015_input.png) | ![](pytorch/result/015_output.png) |
-| ![](pytorch/result/025_input.png) | ![](pytorch/result/025_output.png) |
-| ![](pytorch/result/060_input.png) | ![](pytorch/result/060_output.png) |
-| ![](pytorch/result/004_input.png) | ![](pytorch/result/004_output.png) |
+| ![004_input](result/004_input.png) | ![004_output](result/004_output.png) |
+| ![005_input](result/005_input.png) | ![005_output](result/005_output.png) |
+| ![015_input](result/015_input.png) | ![015_output](result/015_output.png) |
+| ![025_input](result/025_input.png) | ![025_output](result/025_output.png) |
+| ![060_input](result/060_input.png) | ![060_output](result/060_output.png) |
