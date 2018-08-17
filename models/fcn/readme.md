@@ -9,7 +9,7 @@ Using Dataset
 |---|---|---|---|---|---|
 | Keras |   | FCN8: 427,127,544, FCN32 : 4,234,357,544 |  |   |    |
 | Tensorflow Slim |   | 256,445,037 | 256,445,037 * 4bytes |   |   |
-| Pytorch |  |  134,426,885 | 134,426,885 * 4bytes |  |  |
+| Pytorch | 85.62% (Pixel-Acc) |  134,489,759 | 134,489,759 * 4bytes |  | W.I.P |
 
 ## Tip & Trick
 
