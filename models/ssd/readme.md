@@ -7,9 +7,9 @@ Using Dataset
 
 | Implementation | Accuracy | Weights | Memory | Conv Ops | etc |
 |---|---|---|---|---|---|
-|  |   |   |  |   |    |
-|  |   |   |  |   |   |
-|  |   |   | |   |   |
+| Keras |   |   |  |   |    |
+| TensorFlow |   |   |  |   |   |
+| PyTorch |   |   | |   |   |
 
 ## Tip & Trick
 
