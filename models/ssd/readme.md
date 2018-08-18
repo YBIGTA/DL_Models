@@ -22,6 +22,7 @@ Using Dataset
 | mAP | eval metric | [explanation](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173) |
 | hard negative mining | to sample from a lot of negative boxes | [paper](https://arxiv.org/pdf/1604.03540.pdf) |
 |  a trous algorithm  | filling the 'holes' while transforming FC weights into CONV weight | [wikipedia](https://en.wikipedia.org/wiki/Stationary_wavelet_transform) |
+| NMS(Nom-Max Suppression | to leave only one bbox (with highest confidence level) during inference time | [coursera - deep learning](https://www.coursera.org/lecture/convolutional-neural-networks/non-max-suppression-dvrjH) |
 
 ## Error of paper
 - 
