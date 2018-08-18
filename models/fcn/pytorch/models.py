@@ -5,7 +5,7 @@ from torchvision import models
 
 class FCN8s_voc(nn.Module):
     def __init__(self, config):
-        super(FCN8, self).__init__()
+        super(FCN8s_voc, self).__init__()
         pretrained = True if config.mode == 'finetuning' else False
         num_class = config.num_class
 
@@ -99,7 +99,7 @@ class FCN8s_voc(nn.Module):
 
 class FCN8s_224(nn.Module):
     def __init__(self,config):
-        super(FCN8s,self).__init__()
+        super(FCN8s_224,self).__init__()
         self.num_class = config.num_class
         self.mode = config.mode
         vgg = models.vgg16(pretrained=True)
