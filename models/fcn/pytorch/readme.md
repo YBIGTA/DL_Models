@@ -24,7 +24,7 @@ python trainer.py \
   * Pixel Accuracy
     * train: 0.9494
     * test: 0.8951
-  * train-loss: 0.187611948
+  * train-loss: 0.18761195
 
 * Samples
 
