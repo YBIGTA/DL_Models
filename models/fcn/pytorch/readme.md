@@ -1,4 +1,4 @@
-# PyTorch Implementation (WIP)
+# PyTorch Implementation
 
 * Usage
 ~~~
@@ -30,11 +30,11 @@ python trainer.py \
 
 | input image | output mask |
 | ----------- | ----------- |
-| ![01_input](results/01_input.png) | ![01_output](results/01_output.png) |
+| ![01_input](results/00_input.png) | ![01_output](results/00_output.png) |
 | ![02_input](results/01_input.png) | ![02_output](results/01_output.png) |
-| ![03_input](results/01_input.png) | ![03_output](results/01_output.png) |
-| ![04_input](results/01_input.png) | ![04_output](results/01_output.png) |
-| ![05_input](results/01_input.png) | ![05_output](results/01_output.png) |
-| ![06_input](results/01_input.png) | ![06_output](results/01_output.png) |
-| ![07_input](results/01_input.png) | ![07_output](results/01_output.png) |
-| ![08_input](results/01_input.png) | ![08_output](results/01_output.png) |
+| ![03_input](results/02_input.png) | ![03_output](results/02_output.png) |
+| ![04_input](results/03_input.png) | ![04_output](results/03_output.png) |
+| ![05_input](results/04_input.png) | ![05_output](results/04_output.png) |
+| ![06_input](results/05_input.png) | ![06_output](results/05_output.png) |
+| ![07_input](results/06_input.png) | ![07_output](results/06_output.png) |
+| ![08_input](results/07_input.png) | ![08_output](results/07_output.png) |
