@@ -69,11 +69,8 @@ class Trainer(object):
         self.model.eval()
         if not os.path.exists(self.config.save_root):
             os.mkdir(self.config.save_root)
-        acc = 0
-        n_items = 0
-        mean_loss = 0
-        n_step = 0
-        n_pixel = 0
+        acc,n_items,mean_loss,n_step,n_pixel = 0,0,0,0,0
+        
         for data, label in self.eval_loader:
             data, label = data.to(self.device), label.to(self.device)
             logit = self.model(data)
