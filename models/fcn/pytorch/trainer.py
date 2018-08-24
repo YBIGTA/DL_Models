@@ -4,7 +4,7 @@ from torch import optim
 import json
 import os
 from misc import get_args
-from loader import load_voc
+from loader import get_loader
 from models import *
 
 class Trainer(object):
@@ -44,6 +44,8 @@ class Trainer(object):
         return history
 
     def log_history(self,epoch, step, loss, acc, train=True):
+        if not os.path.exists(self.config.log_path):
+            os.path.mkdir(self.config.log_path)
         msg = "epoch: %02d | step: %05d | loss: %8f | pixel-acc: %5f | type: %s"%(epoch,step,loss,acc,"training" if train else "evaluating")
         print(msg)
         if train:
@@ -67,8 +69,11 @@ class Trainer(object):
         self.model.eval()
         if not os.path.exists(self.config.save_root):
             os.mkdir(self.config.save_root)
-        acc, n_items, mean_loss, n_step, n_pixel = 0, 0, 0, 0, 0
-
+        acc = 0
+        n_items = 0
+        mean_loss = 0
+        n_step = 0
+        n_pixel = 0
         for data, label in self.eval_loader:
             data, label = data.to(self.device), label.to(self.device)
             logit = self.model(data)
@@ -112,7 +117,7 @@ class Trainer(object):
                 # get loss and backpropagate
                 loss = self.criterion(roi_logit, roi_label)
                 loss.backward()
-
+                
                 # update parameters
                 self.optimizer.step()
 
@@ -130,15 +135,14 @@ class Trainer(object):
                     n_items,n_pixel, acc, mean_loss = 0, 0, 0, 0
 
             # evaluate
-            if epoch % 2 == 0:
-                self.evaluate(epoch, step)
+            self.evaluate(epoch, step)
 
 
 if __name__ == '__main__':
     config = get_args()
-    train_loader = load_voc(config,train=True)
-    test_loader = load_voc(config,train=False)
-    model = nn.DataParallel(FCN8s_voc(config))
+    train_loader = get_loader(config,train=True)
+    test_loader = get_loader(config,train=False)
+    model = nn.DataParallel(FCN8s_voc(config)) 
     if config.pretrained_path is not None:
         model.load_state_dict(torch.load(config.pretrained_path))
     trainer = Trainer(model, train_loader, test_loader, config)
