@@ -23,7 +23,6 @@ Using Dataset
 | hard negative mining | to sample from a lot of negative boxes | [paper](https://arxiv.org/pdf/1604.03540.pdf) |
 |  a trous algorithm  | filling the 'holes' while transforming FC weights into CONV weight | [wikipedia](https://en.wikipedia.org/wiki/Stationary_wavelet_transform) |
 | NMS(Nom-Max Suppression | to leave only one bbox (with highest confidence level) during inference time | [coursera - deep learning](https://www.coursera.org/lecture/convolutional-neural-networks/non-max-suppression-dvrjH) |
-| L2 Normalizationn | Because the feature scale of Conv4_3 is different | [link](http://www.modulabs.co.kr/DeepLAB_Paper/14990) |
-
+| L2 Normalizationn | Because the feature scale of Conv4_3 is different | [paper](https://www.cs.unc.edu/~wliu/papers/parsenet.pdf) |
 ## Error of paper
 - 
