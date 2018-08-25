@@ -186,11 +186,12 @@ def SSD(input_shape, num_classes):
 
     model['conf'] = Reshape((num_boxes,num_classes))(model['conf'])
     model['conf'] = Activation('softmax')(model['conf'])
-
+    """
     model['predictions'] = concatenate([
         model['loc'],
         model['conf'],
         model['priorbox']
     ], axis=2)
+    """
 
-    return Model(model['in'], model['predictions'])
+    return Model(model['in'], [model['loc'],model['conf'], model['priorbox']])
