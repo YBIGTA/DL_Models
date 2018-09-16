@@ -28,7 +28,7 @@ class Unet(nn.Module):
         for _ in range(4):
             conv_layers.append(ConvLayer(ndim,ndim*2))
             upconv_layers.append(nn.ConvTranspose2d(ndim*2, ndim, kernel_size=2, stride=2))
-            successive_layers.append((ConvLayer(ndim*2,ndim)))
+            successive_layers.append(ConvLayer(ndim*2,ndim))
             ndim *= 2
 
         self.conv_layers = nn.ModuleList(conv_layers)
