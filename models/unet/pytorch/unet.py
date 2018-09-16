@@ -2,7 +2,6 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-
 class ConvLayer(nn.Module):
     def __init__(self, in_features, out_features):
         super(ConvLayer,self).__init__()
@@ -53,15 +52,3 @@ class Unet(nn.Module):
         x = self.conv1x1(x)
         out = F.upsample(x, size = input_size[2:], mode='bilinear')
         return out
-
-
-
-
-
-
-
-
-
-
-
-
