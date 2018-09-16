@@ -4,7 +4,7 @@ Olaf Ronneberger, Philipp Fischer, and Thomas Brox (2015)
 ## Models
 
 | Implementation | Dataset| Accuracy | Weights | Memory | Conv Ops | etc |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | Keras |   |   |  |  |   |    |
 | Tensorflow Slim |   |   |  |  |   |   |
 | Pytorch |  |  |  |  |  | |
