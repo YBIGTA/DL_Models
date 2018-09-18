@@ -6,7 +6,7 @@ Olaf Ronneberger, Philipp Fischer, and Thomas Brox (2015)
 | Implementation | Dataset| Accuracy | Weights | Memory | Conv Ops | etc |
 |---|---|---|---|---|---|---|
 | Keras |   |   |  |  |   |    |
-| Tensorflow Slim |   |   |  |  |   |   |
+| Keras (Google Colab) |   |   | 31,030,658 | 124.12 MB |   |   |
 | Pytorch |  |  |  |  |  | |
 
 ## Tip & Trick
