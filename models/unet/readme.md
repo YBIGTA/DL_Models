@@ -17,6 +17,6 @@ Olaf Ronneberger, Philipp Fischer, and Thomas Brox (2015)
 | elastic distortion | data augmentation | [paper - section2](http://cognitivemedium.com/assets/rmnist/Simard.pdf) |
 | bicubic interpolation | per-pixel displacement | [wikipedia](https://en.wikipedia.org/wiki/Bicubic_interpolation) |
 | Overlap-title | to predict the pixels in the border region of the image | [paper](https://arxiv.org/abs/1505.04597) |
-
+| weighted loss | to learn the border pixels of touching cells | [paper](https://arxiv.org/abs/1505.04597) |
 ## Error of paper
 - add this if any errors
