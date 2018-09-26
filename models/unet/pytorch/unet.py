@@ -21,19 +21,19 @@ class Unet(nn.Module):
     def __init__(self, config):
         super(Unet, self).__init__()
         ndim = config['hidden_dim']
-        conv_layers = [ConvLayer(config['input_dim'],ndim)]
-        successive_layers = []
+        encoder_conv_layers = [ConvLayer(config['input_dim'],ndim)]
+        decoder_conv_layers = []
         upconv_layers = []
 
         for _ in range(4):
-            conv_layers.append(ConvLayer(ndim,ndim*2))
+            encoder_conv_layers.append(ConvLayer(ndim,ndim*2))
             upconv_layers.append(nn.ConvTranspose2d(ndim*2, ndim, kernel_size=2, stride=2))
-            successive_layers.append(ConvLayer(ndim*2,ndim))
+            decoder_conv_layers.append((ConvLayer(ndim*2,ndim)))
             ndim *= 2
 
-        self.conv_layers = nn.ModuleList(conv_layers)
+        self.encoder_conv_layers = nn.ModuleList(encoder_conv_layers)
         self.upconv_layers = nn.ModuleList(upconv_layers)
-        self.successive_layers = nn.ModuleList(successive_layers)
+        self.decoder_conv_layers = nn.ModuleList(decoder_conv_layers)
         self.conv1x1 = nn.Conv2d(config['hidden_dim'],config['num_class'], kernel_size=1, stride=1)
 
     def forward(self, x):
@@ -41,14 +41,17 @@ class Unet(nn.Module):
         input_size = x.size()
 
         for i in range(4):
-            x = self.conv_layers[i](x)
+            x = self.encoder_conv_layers[i](x)
             features.append(x)
             x = F.max_pool2d(x, kernel_size=2, stride=2)
-        x = self.conv_layers[4](x)
+        x = self.encoder_conv_layers[4](x)
+
         for i in range(3,-1,-1):
             x = self.upconv_layers[i](x)
             x = torch.cat([x, F.upsample(features[i], size=x.size()[2:],mode='bilinear')],dim=1 )
-            x = self.successive_layers[i](x)
+            x = self.decoder_conv_layers[i](x)
+
         x = self.conv1x1(x)
         out = F.upsample(x, size = input_size[2:], mode='bilinear')
         return out
+
