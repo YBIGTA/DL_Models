@@ -42,7 +42,7 @@ class Unet(nn.Module):
 
         for i in range(4):
             x = self.encoder_conv_layers[i](x)
-            features.append(x)
+            features.append(x.copy())
             x = F.max_pool2d(x, kernel_size=2, stride=2)
         x = self.encoder_conv_layers[4](x)
 
