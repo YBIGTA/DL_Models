@@ -7,7 +7,7 @@ Olaf Ronneberger, Philipp Fischer, and Thomas Brox (2015)
 |---|---|---|---|---|---|---|
 | Keras |   |   |  |  |   |    |
 | Keras (Google Colab) |   |   | 31,030,658 | 124.12 MB |   |   |
-| Pytorch |  |  |  |  |  | |
+| Pytorch | VOC2012 |  | 31,033,045 | 124.13MB |  | training source code [here](https://github.com/Jooong/segmentation-pytorch) |
 
 ## Tip & Trick
 
